@@ -1,0 +1,49 @@
+.wawd {
+  padding-top: 0;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    padding-left: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-img__container {
+    position: relative;
+  }
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0;
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--background-color);
+    background-color: var(--wawd-text-color);
+  }
+}

@@ -1,0 +1,82 @@
+.mailing {
+  &__label {
+    display: block;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--background-color);
+    margin-top: 0;
+    line-height: 1.14;
+
+    margin-bottom: 20px;
+  }
+
+  &__input--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .email-input-area {
+    width: 358px;
+    height: 50px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    margin-right: 12px;
+
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: var(--transparent-white-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: var(--hero-background-color);
+  }
+
+  .email-input-area::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: var(--transparent-white-color);
+  }
+
+  &__button {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    background-color: var(--main-active-color);
+    color: var(--white-buttons-color);
+  }
+
+  .icon-send {
+    width: 24px;
+    height: 24px;
+
+    margin-left: 10px;
+  }
+}

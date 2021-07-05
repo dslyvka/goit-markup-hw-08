@@ -1,0 +1,64 @@
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  height: 581px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 39px;
+  padding-left: 41px;
+
+  border-radius: 0;
+
+  opacity: 1;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--transition), opacity 250ms var(--transition),
+    border-radius 250ms var(--transition);
+
+  background-color: var(--background-color);
+}
+
+.close-button {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--close-border-color);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  background-color: var(--background-color);
+
+  &:hover .close-icon,
+  &:focus .close-icon {
+    fill: var(--main-active-color);
+    transition: fill 250ms var(--transition);
+  }
+}
+
+.close-icon {
+  width: 11px;
+  height: 11px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}

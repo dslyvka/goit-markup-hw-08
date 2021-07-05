@@ -1,0 +1,57 @@
+.advantages {
+  &__list {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__svg-background {
+    width: 270px;
+    height: 120px;
+
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white-buttons-color);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.antenna-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.clock-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.diagram-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.astronaut-icon {
+  width: 70px;
+  height: 70px;
+}
