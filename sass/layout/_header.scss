@@ -4,6 +4,7 @@
   &__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -11,7 +12,9 @@
   color: var(--title-color);
 }
 
+
 .page-nav {
+  display: none;
   margin-right: auto;
 
   &__list {

@@ -22,6 +22,18 @@
     <header class="page-header">
       <div class="container page-header__container">
         <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
+        <button
+          type="button"
+          class="menu__button js-open-menu is-open"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg class="menu__icon svg--transition" aria-label="Переключатель мобильного меню">
+            <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+          </svg>
+        </button>
+
         <nav class="page-nav">
           <ul class="page-nav__list list">
             <li class="page-nav__item">
@@ -30,10 +42,12 @@
             <li class="page-nav__item">
               <a href="./portfolio.html" class="page-nav__link link">Портфолио</a>
             </li>
-            <li class="page-nav__item" id="anchor"><a href="#contacts" class="page-nav__link link">Контакты</a></li>
+            <li class="page-nav__item" id="anchor">
+              <a href="#contacts" class="page-nav__link link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
+        <ul class="header-contacts list none">
           <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__link link">
               <svg class="envelope-icon">
@@ -54,7 +68,7 @@
       </div>
     </header>
     <!-- header -->
-    <main>
+    <main class="none">
       <!-- HERO section -->
       <section class="hero section">
         <div class="container hero__container">
@@ -384,10 +398,9 @@
         </div>
       </section>
       <!-- clients section -->
-    
     </main>
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer none">
       <div class="container footer-container">
         <div class="address-container">
           <a href="./index.html" class="logo">Web<span class="footer-logo">Studio</span></a>
@@ -395,7 +408,9 @@
             <p class="address__text text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="address__list list">
               <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="address__link link"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="address__item">
                 <a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
@@ -441,14 +456,23 @@
         </div>
         <div class="mailing__container">
           <form name="mailing" class="mailing">
-            <label for="subscribe-on-mailing" class="mailing__label text">Подпишитесь на рассылку</label>
+            <label for="subscribe-on-mailing" class="mailing__label text"
+              >Подпишитесь на рассылку</label
+            >
             <div class="mailing__input--container">
-            <input type="email" id="subscribe-on-mailing" name="email" placeholder="E-mail" class="email-input-area">
-            <button type="submit" class="mailing__button button">Подписаться 
-              <svg class="icon-send">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+              <input
+                type="email"
+                id="subscribe-on-mailing"
+                name="email"
+                placeholder="E-mail"
+                class="email-input-area"
+              />
+              <button type="submit" class="mailing__button button">
+                Подписаться
+                <svg class="icon-send">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
@@ -467,21 +491,21 @@
             <b class="feedback__text">Оставьте свои данные, мы вам перезвоним</b>
             <div class="feedback__field">
               <label for="name" class="feedback__label text">Имя</label>
-              <input type="text" id="name" name="name" class="feedback__input">
+              <input type="text" id="name" name="name" class="feedback__input" />
               <svg class="input-icon">
                 <use href="./images/icons.svg#icon-name-input"></use>
               </svg>
             </div>
             <div class="feedback__field">
               <label for="tel" class="feedback__label text">Телефон</label>
-              <input type="tel" id="tel" name="tel" class="feedback__input">
+              <input type="tel" id="tel" name="tel" class="feedback__input" />
               <svg class="input-icon">
                 <use href="./images/icons.svg#icon-tel-input"></use>
               </svg>
             </div>
             <div class="feedback__field">
               <label for="email" class="feedback__label text">Почта</label>
-              <input type="email" id="email" name="email" class="feedback__input">
+              <input type="email" id="email" name="email" class="feedback__input" />
               <svg class="input-icon">
                 <use href="./images/icons.svg#icon-mail-input"></use>
               </svg>
@@ -492,11 +516,16 @@
             </div>
             <div class="feedback__field use-policy">
               <label class="use-policy__text">
-                <input type="checkbox" value="agree" name="terms-of-use" class="use-policy__checkbox">
-                    <svg class="checkbox-icon">
-                      <use href="./images/icons.svg#icon-check"></use>
-                    </svg>
-                  Соглашаюсь с рассылкой и принимаю 
+                <input
+                  type="checkbox"
+                  value="agree"
+                  name="terms-of-use"
+                  class="use-policy__checkbox"
+                />
+                <svg class="checkbox-icon">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                Соглашаюсь с рассылкой и принимаю
                 <a href="" class="use-policy__link">Условия договора</a>
               </label>
             </div>
@@ -505,7 +534,57 @@
         </div>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu menu__button-close">
+        <svg class="menu__icon svg--transition">
+          <use href="./images/icons.svg#icon-close-menu" class="icon-menu-close"></use>
+        </svg>
+      </button>
+
+      <nav class="menu-nav">
+        <ul class="menu-nav__list list">
+          <li class="menu-nav__item">
+            <a href="./index.html" class="menu-nav__link link current">Студия</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="./portfolio.html" class="menu-nav__link link">Портфолио</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="" class="menu-nav__link link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="menu-contacts list">
+        <li class="menu-contacts__item">
+          <a href="tel:+380961111111" class="menu-contacts__link number link">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="menu-contacts__item">
+          <a href="mailto:info@devstudio.com" class="menu-contacts__link email link">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="menu-social-media list">
+        <li class="menu-social-media__item">
+          <a href="" class="menu-social-media__link link">Instagram</a>
+        </li>
+        <li class="menu-social-media__item">
+          <a href="" class="menu-social-media__link link">Twitter</a>
+        </li>
+        <li class="menu-social-media__item">
+          <a href="" class="menu-social-media__link link">Facebook</a>
+        </li>
+        <li class="menu-social-media__item">
+          <a href="" class="menu-social-media__link link">Linkedin</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
