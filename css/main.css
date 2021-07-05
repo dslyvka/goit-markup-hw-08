@@ -1328,6 +1328,7 @@ image {
   padding-left: 40px;
   background-color: var(--background-color);
   overflow-y: scroll;
+  pointer-events: none;
 }
 
 .menu-container.is-open {
