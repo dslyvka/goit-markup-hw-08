@@ -32,14 +32,10 @@ ul {
   list-style: none;
 }
 
-image {
+img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-}
-
-.image {
-  display: block;
 }
 
 .hidden {
@@ -958,17 +954,11 @@ image {
 }
 
 .our-team__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 33px;
+  line-height: 1.18;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
-}
-
-.our-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .our-team__item {
@@ -980,7 +970,7 @@ image {
 }
 
 .our-team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .our-team__container {
@@ -1011,6 +1001,12 @@ image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-media__item:not(:last-child) {
@@ -1058,10 +1054,10 @@ image {
 
 .clients__title {
   text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
@@ -1071,10 +1067,13 @@ image {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.clients__item:not(:last-child) {
+.clients__item:nth-child(2n + 1) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .clients__link {
@@ -1104,17 +1103,19 @@ image {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 
 .client-icon {
   fill: var(--social-meadia-logo);
+  width: 106px;
+  height: 60px;
 }
 
 .client1 {
-  width: 41px;
-  height: 46.7px;
+  width: 44px;
+  height: 49px;
 }
 
 .client2 {
@@ -1123,23 +1124,23 @@ image {
 }
 
 .client3 {
-  width: 43.46px;
-  height: 41.18px;
+  width: 41px;
+  height: 43px;
 }
 
 .client4 {
-  width: 84.44px;
-  height: 40.62px;
+  width: 80px;
+  height: 42px;
 }
 
 .client5 {
-  width: 62.54px;
-  height: 45.43px;
+  width: 59px;
+  height: 47px;
 }
 
 .client6 {
-  width: 93.79px;
-  height: 43.93px;
+  width: 89px;
+  height: 46px;
 }
 
 .portfolio__list {

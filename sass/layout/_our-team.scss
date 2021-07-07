@@ -2,15 +2,11 @@
   background-color: var(--white-buttons-color);
 
   &__title {
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 33px;
+    line-height: 1.18;
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
-  }
-
-  &__list {
-    display: flex;
   }
 
   &__item {
@@ -24,7 +20,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 
   &__container {
@@ -56,6 +52,8 @@
 
 .social-media {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__item:not(:last-child) {
     margin-right: 10px;

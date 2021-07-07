@@ -1,20 +1,23 @@
 .clients {
   &__title {
     text-align: center;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
 
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &__list {
     display: flex;
     justify-content: center;
+    // flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  &__item:not(:last-child) {
+  &__item:nth-child(2n + 1) {
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 
   &__link {
@@ -40,17 +43,19 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 
 .client-icon {
   fill: var(--social-meadia-logo);
+  width: 106px;
+  height: 60px;
 }
 
 .client1 {
-  width: 41px;
-  height: 46.7px;
+  width: 44px;
+  height: 49px;
 }
 
 .client2 {
@@ -59,21 +64,21 @@
 }
 
 .client3 {
-  width: 43.46px;
-  height: 41.18px;
+  width: 41px;
+  height: 43px;
 }
 
 .client4 {
-  width: 84.44px;
-  height: 40.62px;
+  width: 80px;
+  height: 42px;
 }
 
 .client5 {
-  width: 62.54px;
-  height: 45.43px;
+  width: 59px;
+  height: 47px;
 }
 
 .client6 {
-  width: 93.79px;
-  height: 43.93px;
+  width: 89px;
+  height: 46px;
 }
