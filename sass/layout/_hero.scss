@@ -13,18 +13,21 @@
 
   background-color: var(--hero-background-color);
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
 
   &__container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
@@ -33,10 +36,10 @@
 
     margin-bottom: 30px;
     margin-top: 0;
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
     display: block;
-    width: 360px;
   }
 
   &__button {

@@ -1,17 +1,15 @@
 .advantages {
   &__list {
-    display: flex;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 
   &__svg-background {
-    width: 270px;
     height: 120px;
 
     border-radius: 4px;
@@ -28,6 +26,7 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
   }
 
   &__text {
