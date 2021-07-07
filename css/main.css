@@ -517,15 +517,17 @@ image {
   text-transform: uppercase;
   text-align: center;
   color: var(--background-color);
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
   margin-top: 0;
+  padding-left: 60px;
+  padding-right: 60px;
   display: block;
-  width: 696px;
+  width: 360px;
 }
 
 .hero__button {
+  width: 200px;
+  height: 50px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -1321,6 +1323,16 @@ image {
   transition: transform 500ms var(--transition), -webkit-transform 500ms var(--transition);
   -webkit-transition-delay: 150ms;
           transition-delay: 150ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
@@ -1334,10 +1346,6 @@ image {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-}
-
-.menu-nav {
-  margin-bottom: 302px;
 }
 
 .menu-nav__item:not(:last-child) {
@@ -1363,10 +1371,6 @@ image {
   height: 40px;
   -webkit-transition: fill 250ms var(--transition);
   transition: fill 250ms var(--transition);
-}
-
-.menu-contacts {
-  margin-bottom: 64px;
 }
 
 .menu-contacts__item:not(:last-child) {
