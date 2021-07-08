@@ -39,6 +39,7 @@ ul {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .hidden {
@@ -58,6 +59,12 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
 }
 
@@ -157,9 +164,33 @@ img {
   color: var(--title-color);
 }
 
+.menu__button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.menu__button:hover .menu__icon,
+.menu__button:focus .menu__icon {
+  fill: var(--main-active-color);
+}
+
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+
 .page-nav {
   display: none;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .page-nav {
+    display: block;
+  }
 }
 
 .page-nav__list {
@@ -212,16 +243,35 @@ img {
 }
 
 .header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.header-contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header-contacts__link {
@@ -237,9 +287,14 @@ img {
           align-items: center;
   -webkit-transition: color 250ms var(--transition);
   transition: color 250ms var(--transition);
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .envelope-icon {
@@ -1396,19 +1451,6 @@ img {
 
 .none {
   display: none;
-}
-
-.menu__button {
-  display: block;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-}
-
-.menu__button:hover .menu__icon,
-.menu__button:focus .menu__icon {
-  fill: var(--main-active-color);
 }
 
 .menu__button-close {
