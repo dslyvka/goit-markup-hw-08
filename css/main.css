@@ -866,6 +866,10 @@ img {
   background-color: var(--main-active-color);
 }
 
+.use-policy__checkbox:checked + .checkbox-icon .use-policy__checkbox, .use-policy__checkbox:focus + .checkbox-icon .use-policy__checkbox {
+  opacity: 0;
+}
+
 .use-policy__text {
   position: relative;
   cursor: pointer;

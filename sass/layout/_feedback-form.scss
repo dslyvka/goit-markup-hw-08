@@ -173,6 +173,10 @@
     background-color: var(--main-active-color);
   }
 
+   &__checkbox:checked + .checkbox-icon  &__checkbox, &__checkbox:focus + .checkbox-icon  &__checkbox{
+    opacity: 0;
+   }
+
   &__text {
     position: relative;
 
