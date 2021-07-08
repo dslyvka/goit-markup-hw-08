@@ -118,9 +118,17 @@
 
   &__link {
     font-weight: 500;
+    font-size: 12px;
+    @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.14;
+    }
+
+
+    line-height: 1.16;
     letter-spacing: 0.02em;
+
+
 
     display: flex;
     align-items: center;
