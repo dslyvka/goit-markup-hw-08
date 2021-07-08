@@ -1,10 +1,15 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // justify-content: center;
 
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  &__item {
+    margin-bottom: 15px;
+  }
 
   .current-button {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
