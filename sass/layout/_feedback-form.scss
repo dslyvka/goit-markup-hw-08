@@ -173,19 +173,23 @@
     background-color: var(--main-active-color);
   }
 
-   &__checkbox:checked + .checkbox-icon  &__checkbox, &__checkbox:focus + .checkbox-icon  &__checkbox{
+  &__checkbox:checked + .checkbox-icon &__checkbox,
+  &__checkbox:focus + .checkbox-icon &__checkbox {
     opacity: 0;
-   }
+  }
 
   &__text {
     position: relative;
 
     cursor: pointer;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    @media screen and (min-width: 364px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     text-align: center;
 
     font-weight: 400;
