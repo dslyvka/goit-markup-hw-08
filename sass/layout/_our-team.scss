@@ -2,11 +2,17 @@
   background-color: var(--white-buttons-color);
 
   &__title {
-    font-size: 33px;
+    font-size: 28px;
     line-height: 1.18;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -35,6 +41,12 @@
       margin-left: 30px;
       margin-bottom: 30px;
       flex-basis: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+      margin-bottom: 30px;
+      flex-basis: calc((100% - 120px) / 4);
     }
   }
 

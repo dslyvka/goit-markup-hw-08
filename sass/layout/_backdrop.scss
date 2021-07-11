@@ -2,8 +2,10 @@
 .backdrop {
   position: fixed;
 
-  display: flex;
-  justify-content: center;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 
   top: 0;
   left: 0;
@@ -23,6 +25,7 @@
   opacity: 1;
   pointer-events: all;
   overflow-y: scroll;
-
-  padding: 93px 15px 94px;
+  @media screen and (max-width: 767px) {
+    padding: 93px 15px 94px;
+  }
 }

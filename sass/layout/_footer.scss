@@ -1,8 +1,24 @@
+// .page-footer {
+// }
+
 .footer-container {
+  max-height: 603px;
+  @media screen and (min-width: 768px) {
+    max-height: 463px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: 252px;
+  }
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 
   & .logo {
     display: block;
@@ -10,6 +26,30 @@
     padding-bottom: 0;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+
+.sm-n-addr-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sm-n-addr-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    @media screen and (max-width: 1199px) {
+      padding-left: 61px;
+      padding-right: 61px;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: space-around;
+    }
   }
 }
 
@@ -36,6 +76,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
+  max-width: 232px;
+
   &__text {
     font-style: normal;
 
@@ -77,10 +121,10 @@
 .sm {
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 60px;
 
   &__container {
     width: 206px;
+    margin-bottom: 60px;
   }
 
   &__title {
@@ -102,9 +146,10 @@
 
   &__list {
     display: flex;
+    justify-content: space-between;
   }
 
-  &__item {
+  &__item:not(:last-child) {
     margin-right: 10px;
   }
 

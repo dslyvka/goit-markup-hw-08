@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     width: 100%;
   }
 
@@ -14,6 +13,9 @@
 
     text-transform: uppercase;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
     font-weight: 700;
     font-size: 14px;
     color: var(--background-color);
@@ -28,10 +30,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: flex-start;
+    }
   }
 
   .email-input-area {
     width: 100%;
+    @media screen and (min-width: 768px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 358px;
+      margin-right: 12px;
+    }
     height: 50px;
 
     padding-top: 15px;
@@ -56,7 +70,8 @@
 
     background-color: var(--hero-background-color);
 
-    &:focus, &:active {
+    &:focus,
+    &:active {
       border-color: var(--main-active-color);
       outline: none;
     }

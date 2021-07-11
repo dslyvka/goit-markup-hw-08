@@ -34,6 +34,8 @@
 
   @media screen and (min-width: 768px) {
     display: block;
+    display: flex;
+    align-items: center;
   }
 
   &__list {
@@ -41,6 +43,10 @@
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 88px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
   }
 
   &__item:not(:last-child) {
@@ -103,7 +109,6 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  
   @media screen and (min-width: 768px) {
     &__item:not(:last-child) {
       margin-bottom: 10px;
@@ -120,15 +125,12 @@
     font-weight: 500;
     font-size: 12px;
     @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.14;
+      font-size: 14px;
+      line-height: 1.14;
     }
-
 
     line-height: 1.16;
     letter-spacing: 0.02em;
-
-
 
     display: flex;
     align-items: center;
@@ -148,15 +150,27 @@
   fill: currentColor;
 
   display: block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .smartphone-icon {
   fill: currentColor;
 
   width: 10px;
-  height: 16px;
-  margin-right: 10px;
+  height: 14px;
+  margin-right: 8px;
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }

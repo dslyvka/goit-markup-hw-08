@@ -1,5 +1,6 @@
 .logo {
   color: var(--main-active-color);
+  display: block;
 
   font-family: Raleway;
   font-weight: 700;
@@ -10,4 +11,10 @@
 
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.logo-hidden {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
