@@ -308,7 +308,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contacts__item:first-child .header-contacts__link {
     padding-top: 21px;
   }

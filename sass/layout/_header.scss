@@ -122,12 +122,14 @@
   }
 
   @media screen and (min-width: 768px) {
-    &__item:first-child &__link {
-      padding-top: 21px;
-    }
+    @media screen and (max-width: 1199px) {
+      &__item:first-child &__link {
+        padding-top: 21px;
+      }
 
-    &__item:last-child &__link {
-      padding-bottom: 21px;
+      &__item:last-child &__link {
+        padding-bottom: 21px;
+      }
     }
   }
 
